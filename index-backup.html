@@ -13,39 +13,39 @@
       <!--          SIDEBAR START              -->
       <!----------------------------------------->
       <aside class="bg-r-custom-primary-light absolute left-[-250px] top-0 z-50 h-screen w-[250px] border-r border-custom-border-light bg-custom-primary-light px-3 lg:left-0">
-        <!-- RECENT TAB  -->
-        <section class="mt-2">
-          <div class="flex">
-            <div class="flex w-full rounded-lg bg-gray-100 p-1 transition hover:bg-gray-200 dark:bg-neutral-700 dark:hover:bg-neutral-600">
-              <nav class="flex space-x-1" aria-label="Tabs" role="tablist">
-                <button type="button" class="active inline-flex items-center gap-x-2 rounded-lg bg-transparent px-2 py-2 text-sm font-medium text-gray-500 hover:text-gray-700 disabled:pointer-events-none disabled:opacity-50 hs-tab-active:bg-white hs-tab-active:text-gray-700 dark:text-neutral-400 dark:hover:text-white dark:hs-tab-active:bg-gray-800 hs-tab-active:dark:bg-neutral-800 hs-tab-active:dark:text-neutral-400" id="segment-item-1" data-hs-tab="#segment-1" aria-controls="segment-1" role="tab">Favorite</button>
-                <button type="button" class="inline-flex items-center gap-x-2 rounded-lg bg-transparent px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700 disabled:pointer-events-none disabled:opacity-50 hs-tab-active:bg-white hs-tab-active:text-gray-700 dark:text-neutral-400 dark:hover:text-white dark:hs-tab-active:bg-gray-800 hs-tab-active:dark:bg-neutral-800 hs-tab-active:dark:text-neutral-400" id="segment-item-2" data-hs-tab="#segment-2" aria-controls="segment-2" role="tab">Recently</button>
-              </nav>
-            </div>
+        <!-- SEARCHBOX  -->
+        <form action="" class="border-custom-light radius mt-2 flex items-center border bg-custom-secondary-light px-2">
+          <svg class="icon opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+            <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+          </svg>
+          <input class="w-[20px] flex-grow bg-transparent p-2" type="text" placeholder="Search..." />
+          <div class="hidden items-center border border-custom-border-light">
+            <svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+              <path d="M15 9V15H9V9H15Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              <path d="M15 15H18C19.6569 15 21 16.3431 21 18C21 19.6569 19.6569 21 18 21C16.3431 21 15 19.6569 15 18V15Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              <path d="M9 15.002H6C4.34315 15.002 3 16.3451 3 18.002C3 19.6588 4.34315 21.002 6 21.002C7.65685 21.002 9 19.6588 9 18.002V15.002Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              <path d="M15 9.00012L15 6.00012C15 4.34327 16.3431 3.00012 18 3.00012C19.6569 3.00012 21 4.34327 21 6.00012C21 7.65698 19.6569 9.00012 18 9.00012H15Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              <path d="M9 9.00012V6.00012C9 4.34327 7.65685 3.00012 6 3.00012C4.34315 3.00012 3 4.34327 3 6.00012C3 7.65698 4.34315 9.00012 6 9.00012H9Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+            F
           </div>
+        </form>
 
-          <div class="mt-3">
-            <div id="segment-1" role="tabpanel" aria-labelledby="segment-item-1">
-              <ul class="mt-2">
-                <li>
-                  <a class="flex gap-2 rounded-md bg-custom-tertiary-light px-3 py-2" href=""><span class="opacity-40">●</span> Overview </a>
-                </li>
-                <li>
-                  <a class="flex gap-2 rounded-md px-3 py-2 text-custom-text-secondary-light" href=""><span class="opacity-40">●</span> Projects </a>
-                </li>
-              </ul>
-            </div>
-            <div id="segment-2" class="hidden" role="tabpanel" aria-labelledby="segment-item-2">
-              <ul class="mt-2">
-                <li>
-                  <a class="flex gap-2 rounded-md bg-custom-tertiary-light px-3 py-2" href=""><span class="opacity-40">●</span> eCommerce </a>
-                </li>
-                <li>
-                  <a class="flex gap-2 rounded-md px-3 py-2 text-custom-text-secondary-light" href=""><span class="opacity-40">●</span> Online Course </a>
-                </li>
-              </ul>
-            </div>
+        <!-- RECENT TAB  -->
+        <section class="mt-4">
+          <div class="space-x-4">
+            <button>Favorite</button>
+            <button class="text-custom-text-secondary-light">Recently</button>
           </div>
+          <ul class="mt-2">
+            <li>
+              <a class="flex gap-2 rounded-md bg-custom-tertiary-light px-3 py-2" href=""><span class="opacity-40">●</span> Overview </a>
+            </li>
+            <li>
+              <a class="flex gap-2 rounded-md px-3 py-2 text-custom-text-secondary-light" href=""><span class="opacity-40">●</span> Projects </a>
+            </li>
+          </ul>
         </section>
 
         <!-- NAVIGATION  -->
@@ -216,7 +216,6 @@
         </section>
       </aside>
       <main class="relative flex h-screen max-w-[100%] flex-col bg-custom-secondary-light lg:left-[250px] lg:w-[calc(100%-250px)]">
-        <!-- Header  -->
         <header class="flex h-[60px] w-full flex-shrink-0 items-center justify-between border-b bg-custom-primary-light px-2">
           <div class="flex items-center gap-2">
             <button onclick="openSidebar()" class="grid h-10 w-10 place-content-center rounded-full hover:bg-custom-tertiary-light">
@@ -246,28 +245,28 @@
           </div>
         </header>
 
-        <section class="flex-grow overflow-y-scroll lg:mx-2">
-          <!-- Breadcrumb -->
-          <ol class="mt-2 flex items-center whitespace-nowrap">
-            <li class="inline-flex items-center">
-              <a class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none dark:text-neutral-500 dark:hover:text-blue-500 dark:focus:text-blue-500" href="#"> Home </a>
-              <svg class="mx-2 size-4 flex-shrink-0 overflow-visible text-gray-400 dark:text-neutral-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m9 18 6-6-6-6"></path>
-              </svg>
-            </li>
-            <li class="inline-flex items-center">
-              <a class="flex items-center text-sm text-gray-500 hover:text-blue-600 focus:text-blue-600 focus:outline-none dark:text-neutral-500 dark:hover:text-blue-500 dark:focus:text-blue-500" href="#">
-                App Center
-                <svg class="mx-2 size-4 flex-shrink-0 overflow-visible text-gray-400 dark:text-neutral-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="m9 18 6-6-6-6"></path>
-                </svg>
-              </a>
-            </li>
-            <li class="inline-flex items-center truncate text-sm font-semibold text-gray-800 dark:text-neutral-200" aria-current="page">Application</li>
-          </ol>
+        <section class="flex-grow overflow-y-scroll">
+          <!-- BREADCRUMB  -->
+          <section class="my-2 px-3">
+            <nav class="text-sm text-gray-500" aria-label="Breadcrumb">
+              <ol class="list-reset flex">
+                <li>
+                  <a href="#" class="text-custom-text-secondary-light hover:text-blue-700">Home</a>
+                </li>
+                <li><span class="mx-2">/</span></li>
+                <li>
+                  <a href="#" class="text-custom-text-secondary-light hover:text-blue-700">Category</a>
+                </li>
+                <li><span class="mx-2">/</span></li>
+                <li>
+                  <span class="text-gray-700">Current Page</span>
+                </li>
+              </ol>
+            </nav>
+          </section>
 
-          <!-- Statistic  -->
-          <section class="mt-2 grid grid-cols-2 justify-between gap-1 lg:grid-cols-4 lg:gap-2">
+          <!-- STATISTIC  -->
+          <section class="mt-2 grid grid-cols-2 justify-between gap-1 lg:mx-2 lg:grid-cols-4 lg:gap-2">
             <div class="relative flex flex-grow flex-col gap-1 rounded-r-md border-y border-r border-custom-border-light bg-custom-primary-light p-3 lg:rounded-md lg:border">
               <h4 class="text-xs font-bold text-custom-text-secondary-light">Total Revenue</h4>
               <span class="bg-gradient-to-r from-[#BF6EEC] to-[#FFBA00] bg-clip-text font-bold text-transparent">$ 64,579,098</span>
@@ -346,169 +345,135 @@
             </div>
           </section>
 
-          <!-- Table  -->
-          <section class="mt-2 border border-custom-border-light bg-custom-primary-light lg:rounded-md">
-            <div class="flex items-center justify-between px-3 py-2">
-              <h2 class="text-lg font-bold text-custom-text-primary-light">Recent Orders</h2>
-              <div>
-                <div class="hs-dropdown relative z-20 mx-1 mt-1 [--auto-close:inside] sm:mt-1 sm:inline-flex">
-                  <button id="hs-dropdown-auto-close-inside" type="button" class="hs-dropdown-toggle inline-flex items-center gap-x-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-800 shadow-sm hover:bg-gray-50 disabled:pointer-events-none disabled:opacity-50 dark:border-neutral-700 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800">
-                    Column
-                    <svg class="size-2.5 hs-dropdown-open:rotate-180" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                  </button>
-
-                  <div class="hs-dropdown-menu duration mt-2 hidden rounded-lg bg-white p-2 opacity-0 shadow-md transition-[opacity,margin] hs-dropdown-open:opacity-100 dark:border dark:border-neutral-700 dark:bg-neutral-800" aria-labelledby="hs-dropdown-auto-close-inside">
-                    <div class="relative flex items-start rounded-lg px-3 py-2 hover:bg-gray-100 dark:hover:bg-neutral-700">
-                      <div class="mt-1 flex h-5 items-center">
-                        <input id="hs-dropdown-item-checkbox-delete" name="hs-dropdown-item-checkbox-delete" type="checkbox" class="shrink-0 rounded border-gray-200 text-blue-600 focus:ring-blue-500 disabled:pointer-events-none disabled:opacity-50 dark:border-neutral-700 dark:bg-neutral-800 dark:checked:border-blue-500 dark:checked:bg-blue-500 dark:focus:ring-offset-gray-800" checked />
-                      </div>
-                      <label for="hs-dropdown-item-checkbox-delete" class="ms-3.5">
-                        <span class="mt-1 block text-sm font-semibold text-gray-800 dark:text-neutral-300">Column -1</span>
-                      </label>
-                    </div>
-                    <div class="relative flex items-start rounded-lg px-3 py-2 hover:bg-gray-100 dark:hover:bg-neutral-700">
-                      <div class="mt-1 flex h-5 items-center">
-                        <input id="hs-dropdown-item-checkbox-archive" name="hs-dropdown-item-checkbox-archive" type="checkbox" class="shrink-0 rounded border-gray-200 text-blue-600 focus:ring-blue-500 disabled:pointer-events-none disabled:opacity-50 dark:border-neutral-700 dark:bg-neutral-800 dark:checked:border-blue-500 dark:checked:bg-blue-500 dark:focus:ring-offset-gray-800" />
-                      </div>
-                      <label for="hs-dropdown-item-checkbox-archive" class="ms-3.5">
-                        <span class="mt-1 block text-sm font-semibold text-gray-800 dark:text-neutral-300">Column -2</span>
-                      </label>
-                    </div>
-                  </div>
+          <!-- TABLE COMPONENT  -->
+          <section class="mt-2 border-y border-custom-border-light bg-custom-primary-light lg:mx-2 lg:rounded-md lg:border">
+            <div class="flex flex-col justify-between gap-2 px-3 py-3 lg:flex-row lg:items-center">
+              <h2 class="font-bold">Recent Orders</h2>
+              <div class="flex flex-grow flex-col text-sm lg:flex-row-reverse lg:items-center lg:gap-2">
+                <div class="flex gap-2">
+                  <select id="countries" class="block w-full rounded-lg border border-gray-300 bg-custom-secondary-light p-2.5 outline-none">
+                    <option selected class="text-custom-text-secondary-light">Select Column</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                  <select id="countries" class="block w-full rounded-lg border border-gray-300 bg-custom-secondary-light p-2.5 outline-none">
+                    <option selected class="text-custom-text-secondary-light">Sort Table</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
                 </div>
+                <!-- SEARCHBOX  -->
+                <form action="" class="border-custom-light radius mt-2 flex flex-grow items-center border bg-custom-secondary-light px-2 lg:m-0 lg:max-w-56">
+                  <svg class="icon opacity-60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                    <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                  </svg>
+                  <input class="w-[20px] flex-grow bg-transparent p-2 outline-none" type="text" placeholder="Search..." />
+                  <div class="hidden items-center border border-custom-border-light">
+                    <svg class="icon-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                      <path d="M15 9V15H9V9H15Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                      <path d="M15 15H18C19.6569 15 21 16.3431 21 18C21 19.6569 19.6569 21 18 21C16.3431 21 15 19.6569 15 18V15Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                      <path d="M9 15.002H6C4.34315 15.002 3 16.3451 3 18.002C3 19.6588 4.34315 21.002 6 21.002C7.65685 21.002 9 19.6588 9 18.002V15.002Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                      <path d="M15 9.00012L15 6.00012C15 4.34327 16.3431 3.00012 18 3.00012C19.6569 3.00012 21 4.34327 21 6.00012C21 7.65698 19.6569 9.00012 18 9.00012H15Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                      <path d="M9 9.00012V6.00012C9 4.34327 7.65685 3.00012 6 3.00012C4.34315 3.00012 3 4.34327 3 6.00012C3 7.65698 4.34315 9.00012 6 9.00012H9Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                    F
+                  </div>
+                </form>
               </div>
             </div>
-            <div class="overflow-y-auto">
-              <table class="min-w-full divide-y divide-gray-200 dark:divide-neutral-700">
-                <thead class="border-t bg-custom-secondary-light">
+
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm">
+                <thead class="border-y border-custom-border-light bg-custom-secondary-light uppercase text-custom-text-secondary-light">
                   <tr>
-                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium uppercase text-gray-500 dark:text-neutral-500">Name</th>
-                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium uppercase text-gray-500 dark:text-neutral-500">Title</th>
-                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium uppercase text-gray-500 dark:text-neutral-500">Age</th>
-                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium uppercase text-gray-500 dark:text-neutral-500">Email</th>
-                    <th scope="col" class="px-6 py-3 text-start text-xs font-medium uppercase text-gray-500 dark:text-neutral-500">Address</th>
-                    <th scope="col" class="px-6 py-3 text-end text-xs font-medium uppercase text-gray-500 dark:text-neutral-500">Action</th>
+                    <th scope="col" class="px-3 py-3">Product name</th>
+                    <th scope="col" class="px-3 py-3">Color</th>
+                    <th scope="col" class="px-3 py-3">Category</th>
+                    <th scope="col" class="px-3 py-3">Price</th>
                   </tr>
                 </thead>
-                <tbody class="divide-y divide-gray-200 dark:divide-neutral-700">
-                  <tr>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800 dark:text-neutral-200">John Brown</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Regional Paradigm Technician</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">john@site.com</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">45</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">New York No. 1 Lake Park</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-end text-sm font-medium">
-                      <button type="button" class="inline-flex items-center gap-x-2 rounded-lg border border-transparent text-sm font-semibold text-blue-600 hover:text-blue-800 disabled:pointer-events-none disabled:opacity-50 dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
-                    </td>
+                <tbody>
+                  <tr class="border-b border-custom-border-light">
+                    <th scope="row" class="whitespace-nowrap px-3 py-4 font-medium">Apple MacBook Pro 17"</th>
+                    <td class="px-3 py-4">Silver</td>
+                    <td class="px-3 py-4">Laptop</td>
+                    <td class="px-3 py-4">$2999</td>
                   </tr>
-                  <tr>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800 dark:text-neutral-200">John Brown</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Regional Paradigm Technician</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">john@site.com</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">45</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">New York No. 1 Lake Park</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-end text-sm font-medium">
-                      <button type="button" class="inline-flex items-center gap-x-2 rounded-lg border border-transparent text-sm font-semibold text-blue-600 hover:text-blue-800 disabled:pointer-events-none disabled:opacity-50 dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
-                    </td>
+                  <tr class="border-b border-custom-border-light">
+                    <th scope="row" class="whitespace-nowrap px-3 py-4 font-medium">Apple MacBook Pro 17"</th>
+                    <td class="px-3 py-4">Silver</td>
+                    <td class="px-3 py-4">Laptop</td>
+                    <td class="px-3 py-4">$2999</td>
                   </tr>
-                  <tr>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800 dark:text-neutral-200">John Brown</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Regional Paradigm Technician</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">john@site.com</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">45</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">New York No. 1 Lake Park</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-end text-sm font-medium">
-                      <button type="button" class="inline-flex items-center gap-x-2 rounded-lg border border-transparent text-sm font-semibold text-blue-600 hover:text-blue-800 disabled:pointer-events-none disabled:opacity-50 dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
-                    </td>
+                  <tr class="border-b border-custom-border-light">
+                    <th scope="row" class="whitespace-nowrap px-3 py-4 font-medium">Apple MacBook Pro 17"</th>
+                    <td class="px-3 py-4">Silver</td>
+                    <td class="px-3 py-4">Laptop</td>
+                    <td class="px-3 py-4">$2999</td>
                   </tr>
-                  <tr>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800 dark:text-neutral-200">John Brown</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Regional Paradigm Technician</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">john@site.com</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">45</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">New York No. 1 Lake Park</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-end text-sm font-medium">
-                      <button type="button" class="inline-flex items-center gap-x-2 rounded-lg border border-transparent text-sm font-semibold text-blue-600 hover:text-blue-800 disabled:pointer-events-none disabled:opacity-50 dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
-                    </td>
+                  <tr class="border-b border-custom-border-light">
+                    <th scope="row" class="whitespace-nowrap px-3 py-4 font-medium">Apple MacBook Pro 17"</th>
+                    <td class="px-3 py-4">Silver</td>
+                    <td class="px-3 py-4">Laptop</td>
+                    <td class="px-3 py-4">$2999</td>
                   </tr>
-                  <tr>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800 dark:text-neutral-200">John Brown</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Regional Paradigm Technician</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">john@site.com</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">45</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">New York No. 1 Lake Park</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-end text-sm font-medium">
-                      <button type="button" class="inline-flex items-center gap-x-2 rounded-lg border border-transparent text-sm font-semibold text-blue-600 hover:text-blue-800 disabled:pointer-events-none disabled:opacity-50 dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
-                    </td>
+                  <tr class="border-b border-custom-border-light">
+                    <th scope="row" class="whitespace-nowrap px-3 py-4 font-medium">Apple MacBook Pro 17"</th>
+                    <td class="px-3 py-4">Silver</td>
+                    <td class="px-3 py-4">Laptop</td>
+                    <td class="px-3 py-4">$2999</td>
                   </tr>
-                  <tr>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800 dark:text-neutral-200">John Brown</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Regional Paradigm Technician</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">john@site.com</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">45</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">New York No. 1 Lake Park</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-end text-sm font-medium">
-                      <button type="button" class="inline-flex items-center gap-x-2 rounded-lg border border-transparent text-sm font-semibold text-blue-600 hover:text-blue-800 disabled:pointer-events-none disabled:opacity-50 dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
-                    </td>
+                  <tr class="border-b border-custom-border-light">
+                    <th scope="row" class="whitespace-nowrap px-3 py-4 font-medium">Apple MacBook Pro 17"</th>
+                    <td class="px-3 py-4">Silver</td>
+                    <td class="px-3 py-4">Laptop</td>
+                    <td class="px-3 py-4">$2999</td>
                   </tr>
-                  <tr>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800 dark:text-neutral-200">John Brown</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Regional Paradigm Technician</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">john@site.com</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">45</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">New York No. 1 Lake Park</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-end text-sm font-medium">
-                      <button type="button" class="inline-flex items-center gap-x-2 rounded-lg border border-transparent text-sm font-semibold text-blue-600 hover:text-blue-800 disabled:pointer-events-none disabled:opacity-50 dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
-                    </td>
+                  <tr class="border-b border-custom-border-light">
+                    <th scope="row" class="whitespace-nowrap px-3 py-4 font-medium">Apple MacBook Pro 17"</th>
+                    <td class="px-3 py-4">Silver</td>
+                    <td class="px-3 py-4">Laptop</td>
+                    <td class="px-3 py-4">$2999</td>
                   </tr>
-                  <tr>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800 dark:text-neutral-200">John Brown</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Regional Paradigm Technician</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">john@site.com</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">45</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">New York No. 1 Lake Park</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-end text-sm font-medium">
-                      <button type="button" class="inline-flex items-center gap-x-2 rounded-lg border border-transparent text-sm font-semibold text-blue-600 hover:text-blue-800 disabled:pointer-events-none disabled:opacity-50 dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
-                    </td>
+                  <tr class="border-b border-custom-border-light">
+                    <th scope="row" class="whitespace-nowrap px-3 py-4 font-medium">Apple MacBook Pro 17"</th>
+                    <td class="px-3 py-4">Silver</td>
+                    <td class="px-3 py-4">Laptop</td>
+                    <td class="px-3 py-4">$2999</td>
                   </tr>
-                  <tr>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800 dark:text-neutral-200">John Brown</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Regional Paradigm Technician</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">john@site.com</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">45</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">New York No. 1 Lake Park</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-end text-sm font-medium">
-                      <button type="button" class="inline-flex items-center gap-x-2 rounded-lg border border-transparent text-sm font-semibold text-blue-600 hover:text-blue-800 disabled:pointer-events-none disabled:opacity-50 dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
-                    </td>
+                  <tr class="border-b border-custom-border-light">
+                    <th scope="row" class="whitespace-nowrap px-3 py-4 font-medium">Apple MacBook Pro 17"</th>
+                    <td class="px-3 py-4">Silver</td>
+                    <td class="px-3 py-4">Laptop</td>
+                    <td class="px-3 py-4">$2999</td>
                   </tr>
-
-                  <tr>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800 dark:text-neutral-200">Jim Green</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Forward Response Developer</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">jim@site.com</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">27</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">London No. 1 Lake Park</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-end text-sm font-medium">
-                      <button type="button" class="inline-flex items-center gap-x-2 rounded-lg border border-transparent text-sm font-semibold text-blue-600 hover:text-blue-800 disabled:pointer-events-none disabled:opacity-50 dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
-                    </td>
+                  <tr class="border-b border-custom-border-light">
+                    <th scope="row" class="whitespace-nowrap px-3 py-4 font-medium">Apple MacBook Pro 17"</th>
+                    <td class="px-3 py-4">Silver</td>
+                    <td class="px-3 py-4">Laptop</td>
+                    <td class="px-3 py-4">$2999</td>
                   </tr>
-
-                  <tr>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-800 dark:text-neutral-200">Joe Black</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Product Directives Officer</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">joe@site.com</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">31</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-sm text-gray-800 dark:text-neutral-200">Sidney No. 1 Lake Park</td>
-                    <td class="whitespace-nowrap px-6 py-4 text-end text-sm font-medium">
-                      <button type="button" class="inline-flex items-center gap-x-2 rounded-lg border border-transparent text-sm font-semibold text-blue-600 hover:text-blue-800 disabled:pointer-events-none disabled:opacity-50 dark:text-blue-500 dark:hover:text-blue-400">Delete</button>
-                    </td>
+                  <tr class="border-b border-custom-border-light">
+                    <th scope="row" class="whitespace-nowrap px-3 py-4 font-medium">Apple MacBook Pro 17"</th>
+                    <td class="px-3 py-4">Silver</td>
+                    <td class="px-3 py-4">Laptop</td>
+                    <td class="px-3 py-4">$2999</td>
+                  </tr>
+                  <tr class="border-b border-custom-border-light">
+                    <th scope="row" class="whitespace-nowrap px-3 py-4 font-medium">Apple MacBook Pro 17"</th>
+                    <td class="px-3 py-4">Silver</td>
+                    <td class="px-3 py-4">Laptop</td>
+                    <td class="px-3 py-4">$2999</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div class="flex items-center justify-end px-3 py-2">
+            <div class="flex justify-end gap-2 px-3 py-3 text-sm">
               <!-- Pagination -->
               <nav class="flex items-center -space-x-px">
                 <button type="button" class="inline-flex min-h-[38px] min-w-[38px] items-center justify-center gap-x-1.5 border border-gray-200 px-2.5 py-2 text-sm text-gray-800 first:rounded-s-lg last:rounded-e-lg hover:bg-gray-100 focus:bg-gray-100 focus:outline-none disabled:pointer-events-none disabled:opacity-50 dark:border-neutral-700 dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
